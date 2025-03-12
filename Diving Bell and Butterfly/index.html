@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Diving Bell and the Butterfly</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.timeline .event {
+				margin-bottom: 20px;
+				border-left: 2px solid #333;
+				padding-left: 20px;
+				position: relative;
+			}
+			.timeline .event:before {
+				content: '';
+				width: 10px;
+				height: 10px;
+				background: #333;
+				border-radius: 50%;
+				position: absolute;
+				left: -6px;
+				top: 5px;
+			}
+			.quiz .question {
+				margin-bottom: 20px;
+			}
+			.quiz ul {
+				list-style-type: none;
+				padding-left: 0;
+			}
+			.quiz li {
+				margin-bottom: 10px;
+			}
+			.content-wrapper {
+				display: flex;
+				align-items: flex-start;
+			}
+			.content-text {
+				flex: 1;
+				padding-right: 20px;
+			}
+			.content-image {
+				flex: 0 0 300px;
+				text-align: center;
+			}
+			.content-image img {
+				max-width: 100%;
+				height: auto;
+			}
+			.image-caption {
+				margin-top: 10px;
+				font-style: italic;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var content = document.getElementById('content');
+				content.innerHTML = `
+					<div class="content-wrapper">
+						<div class="content-text">
+							<h2>To what extent do you feel hopeful about the future based on your book?</h2>
+							<p>Jean-Dominique Bauby’s memoir, The Diving Bell and the Butterfly, describes the unimaginable suffering he endured but also his resilience and freedom of mind. After having a stroke, Bauby was diagnosed with locked-in syndrome, paralyzing him everywhere except his left eye. Despite this, his speech therapist created a special alphabet, and he dictated the book, letter by letter. Through his hopeless and tragic circumstances, Bauby has an incredibly hopeful and joyful outlook on life. Through freedom of mind, the power of imagination, and human connection, Bauby shows that the “diving bell” can always be transcended by the “butterfly”. Bauby’s imagination and memory provide a lot of hope, his limited relationships and little joys keep him grounded in life, and even in his darkest hour, he still always found hope and will to live. His story inspires a lot of hope for life, showing that no matter the circumstances, you can always find joy.
+</p>
+							<p>Bauby’s imagination and memory allow him to escape his physical confinements and find hope in his eternal world. Throughout his novel, he describes his rich inner world freeing him from the confines of his body. By creating his own experiences and joy, he was able to somewhat enjoy life and find meaning. He writes, "I decided to stop pitying myself. Other than my eye, two things aren't paralyzed, my imagination and my memory" (Bauby, 20). His choice to focus on what he does have, his mind, shows that he is extremely resilient to all his pain and is full of hope. He truly believes that he can still live a life worth living and have meaningful experiences. Even when almost everything has been ripped from him, he still has hope and faith. Bauby was excellent at creating his own world, being the butterfly, and freeing his mind. His book reads, "My diving bell becomes less oppressive, and my mind takes flight like a butterfly" (Bauby, 5). The metaphor of the butterfly symbolizes Bauby’s freedom through his own thoughts and imagination. He proves to the reader that hope lies in the ability to “fly” despite whatever diving bells you may have. Your mind cannot be taken from you; as long as you retain freedom of mind, freedom and hope can be found. Bauby shows us that you, as well as any small pleasures, can always make life worth living.
+</p>
+							<p>Bauby finds hope in the connections that he maintains with others and in whatever small pleasures he finds, keeping him engaged with life. His letters from his friends, phone calls from family, nurses talking to him, and one-sided conversations all show him daily that he is not alone. The people that care about him, that he maintains whatever connection possible with, give him purpose. He says, "I hoard all these letters like a treasure. One day, I hope to fasten them end to end in a half-mile streamer, to float in the wind like a banner raised to the glory of friendship. It will keep the vultures at bay." The letters, to him, strengthen and prove that he still has a community and a bond with people. Being a writer, language is of the utmost importance and gives him meaning in an otherwise meaningless existence. They “keep the vultures at bay” by showing him that people still love, remember, and care for him. This makes him hopeful instead of depressed and isolated. Even being trapped in his body, Bauby finds joy in his memories of eating, his children, and his experiences with others. "For pleasure, I have to turn to the vivid memory of tastes and smells, an inexhaustible reservoir of sensations" (Bauby, 36). Despite his physical limitations, Bauby’s memories of simple joys, like food, scents, and sights, help him still experience joy. His “inexaustiable resilience” shows that he always has more sources of memories and will create new ones to stay hopeful. Even in isolation, his emotional connections create a reason to be alive and find new moments of beauty, joy, and love. 
+</p>
+							<p>Bauby undoubtedly had many moments of depression and despair, but it was his resolve to keep looking for meaning and connection that makes his story one of hope. Bauby, despite creating his own freedom, still questions if he will ever be free. Even in his condition, his refusal to give into depression proves he still has hope. The book reads, "Does the cosmos contain keys for opening my diving bell? A subway line with no terminus? A currency strong enough to buy my freedom back? We must keep looking" (Bauby, 131). He recognizes that there is no known way out of his diving bell; he is trapped. Logically, he knows that there is no cure, but his desire to look creates the hope and will he needs. Even in the desperation and uncertainty he lives with, he refuses to give up. Bauby’s need to feel emotions like love and admiration shows that he’s still deeply engaged with life and will not become numb and detached. He even says, "I need to feel strongly, to love and admire, just as desperately as I need to breathe" (Bauby, 55). He values emotional connection so much that without it, he wouldn’t want to live. Bauby doesn’t ignore despair; he acknowledges it, but his drive and unbroken spirit keep him going. He wants to live fully, not just exist. His perseverance in finding meaning despite his loss of body and suffering strengthens his immensely hopeful outlook on life. 
+</p>
+							<p>Jean-Dominique Bauby led a very hopeful life, and he showed that imagination, memory, and connection can offer freedom even in the most confined and devastating circumstances. Bauby’s imagination allowed him to move past his diving bell and be a butterfly, creating his own joy. His relationships and knowing that people still cared drove him. It was the smallest pleasures and experiences that provided great comfort and solace to him. Although he experienced loss and grief, he continued to search for meaning and connection, proving that hope can and will always survive hardship. The Diving Bell and the Butterfly reminds us that the human spirit can endure the greatest of challenges, if only the mind is free. Bauny’s life and messages teach that hope and beauty can always be found if you only have the will and desire. You can make any life worth living, and Bauby made every moment of his count. He created a more hopeful future that anyone is able to reflect back in their own life. 
+</p>
+						 
+					</div>
+				`;
+
+				var mainTitle = document.querySelector('h1 a');
+				mainTitle.addEventListener('click', function(e) {
+					e.preventDefault();
+					content.innerHTML = `
+						<div class="content-wrapper">
+							<div class="content-text">
+								<h2>To what extent do you feel hopeful about the future based on your book?</h2>
+								<p>Jean-Dominique Bauby’s memoir, The Diving Bell and the Butterfly, describes the unimaginable suffering he endured but also his resilience and freedom of mind. After having a stroke, Bauby was diagnosed with locked-in syndrome, paralyzing him everywhere except his left eye. Despite this, his speech therapist created a special alphabet, and he dictated the book, letter by letter. Through his hopeless and tragic circumstances, Bauby has an incredibly hopeful and joyful outlook on life. Through freedom of mind, the power of imagination, and human connection, Bauby shows that the “diving bell” can always be transcended by the “butterfly”. Bauby’s imagination and memory provide a lot of hope, his limited relationships and little joys keep him grounded in life, and even in his darkest hour, he still always found hope and will to live. His story inspires a lot of hope for life, showing that no matter the circumstances, you can always find joy.
+</p>
+							<p>Bauby’s imagination and memory allow him to escape his physical confinements and find hope in his eternal world. Throughout his novel, he describes his rich inner world freeing him from the confines of his body. By creating his own experiences and joy, he was able to somewhat enjoy life and find meaning. He writes, "I decided to stop pitying myself. Other than my eye, two things aren't paralyzed, my imagination and my memory" (Bauby, 20). His choice to focus on what he does have, his mind, shows that he is extremely resilient to all his pain and is full of hope. He truly believes that he can still live a life worth living and have meaningful experiences. Even when almost everything has been ripped from him, he still has hope and faith. Bauby was excellent at creating his own world, being the butterfly, and freeing his mind. His book reads, "My diving bell becomes less oppressive, and my mind takes flight like a butterfly" (Bauby, 5). The metaphor of the butterfly symbolizes Bauby’s freedom through his own thoughts and imagination. He proves to the reader that hope lies in the ability to “fly” despite whatever diving bells you may have. Your mind cannot be taken from you; as long as you retain freedom of mind, freedom and hope can be found. Bauby shows us that you, as well as any small pleasures, can always make life worth living.
+</p>
+							<p>Bauby finds hope in the connections that he maintains with others and in whatever small pleasures he finds, keeping him engaged with life. His letters from his friends, phone calls from family, nurses talking to him, and one-sided conversations all show him daily that he is not alone. The people that care about him, that he maintains whatever connection possible with, give him purpose. He says, "I hoard all these letters like a treasure. One day, I hope to fasten them end to end in a half-mile streamer, to float in the wind like a banner raised to the glory of friendship. It will keep the vultures at bay." The letters, to him, strengthen and prove that he still has a community and a bond with people. Being a writer, language is of the utmost importance and gives him meaning in an otherwise meaningless existence. They “keep the vultures at bay” by showing him that people still love, remember, and care for him. This makes him hopeful instead of depressed and isolated. Even being trapped in his body, Bauby finds joy in his memories of eating, his children, and his experiences with others. "For pleasure, I have to turn to the vivid memory of tastes and smells, an inexhaustible reservoir of sensations" (Bauby, 36). Despite his physical limitations, Bauby’s memories of simple joys, like food, scents, and sights, help him still experience joy. His “inexaustiable resilience” shows that he always has more sources of memories and will create new ones to stay hopeful. Even in isolation, his emotional connections create a reason to be alive and find new moments of beauty, joy, and love. 
+</p>
+							<p>Bauby undoubtedly had many moments of depression and despair, but it was his resolve to keep looking for meaning and connection that makes his story one of hope. Bauby, despite creating his own freedom, still questions if he will ever be free. Even in his condition, his refusal to give into depression proves he still has hope. The book reads, "Does the cosmos contain keys for opening my diving bell? A subway line with no terminus? A currency strong enough to buy my freedom back? We must keep looking" (Bauby, 131). He recognizes that there is no known way out of his diving bell; he is trapped. Logically, he knows that there is no cure, but his desire to look creates the hope and will he needs. Even in the desperation and uncertainty he lives with, he refuses to give up. Bauby’s need to feel emotions like love and admiration shows that he’s still deeply engaged with life and will not become numb and detached. He even says, "I need to feel strongly, to love and admire, just as desperately as I need to breathe" (Bauby, 55). He values emotional connection so much that without it, he wouldn’t want to live. Bauby doesn’t ignore despair; he acknowledges it, but his drive and unbroken spirit keep him going. He wants to live fully, not just exist. His perseverance in finding meaning despite his loss of body and suffering strengthens his immensely hopeful outlook on life. 
+</p>
+							<p>Jean-Dominique Bauby led a very hopeful life, and he showed that imagination, memory, and connection can offer freedom even in the most confined and devastating circumstances. Bauby’s imagination allowed him to move past his diving bell and be a butterfly, creating his own joy. His relationships and knowing that people still cared drove him. It was the smallest pleasures and experiences that provided great comfort and solace to him. Although he experienced loss and grief, he continued to search for meaning and connection, proving that hope can and will always survive hardship. The Diving Bell and the Butterfly reminds us that the human spirit can endure the greatest of challenges, if only the mind is free. Bauny’s life and messages teach that hope and beauty can always be found if you only have the will and desire. You can make any life worth living, and Bauby made every moment of his count. He created a more hopeful future that anyone is able to reflect back in their own life. 
+</p>						
+						</div>
+					`;
+				});
+
+				// Ensure the image is loaded when the page opens
+				var img = new Image();
+				img.onload = function() {
+					document.querySelector('.content-image img').src = this.src;
+				};
+				img.onerror = function() {
+					console.error('Failed to load image: ' + this.src);
+				};
+				img.src = 'assets/images/viktor_frankl.jpg';
+			});
+		</script>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">The Diving Bell and the Butterfly</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#" data-page="bauby">Jean-Dominique Bauby's Life</a></li>
+								<li><a href="#" data-page="locked">What is Locked In Syndrome?</a></li>
+								<li><a href="#" data-page="butterfly">Why the Butterfly?</a></li>
+								<li><a href="#" data-page="citations">Citations</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post" id="content">
+								<!-- Content will be loaded here -->
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<p class="copyright">&copy; The Diving Bell and the Butterfly. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const contentArea = document.getElementById('content');
+					const navLinks = document.querySelectorAll('nav.links a');
+
+					function loadContent(page) {
+						let content = '';
+						switch(page) {
+							case 'bauby':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Jean-Dominique Bauby's Life</h2>
+										</div>
+									</header>
+									<div class="timeline">
+										<div class="event">
+											<h3>1952</h3>
+											<p>Jean-Dominique Bauby was born in France.</p>
+										</div>
+										<div class="event">
+											<h3>1970s</h3>
+											<p>Bauby started his writing career at Combat, a daily newspaper.</p>
+										</div>
+										<div class="event">
+											<h3>1980s</h3>
+											<p>Bauby wrote for Le Quotidien de Paris.</p>
+										</div>
+										<div class="event">
+											<h3>1991</h3>
+											<p>Bauby became the editor-in-chief of French Elle magazine.</p>
+										</div>
+										<div class="event">
+											<h3>1995</h3>
+											<p>Bauby suffered a stroke while driving and was in a coma for 20 days.</p>
+											<p>Bauby was diagnosed with locked-in syndrome.</p>
+										</div>
+										<div class="event">
+											<h3>1996</h3>
+											<p>Bauby began writing The Diving Bell and the Butterfly. Working with his speech therapist and by blinking his eye, he wrote his book letter by letter. It took about 200,000 blinks and 10 months to finish.</p>
+										</div>
+										<div class="event">
+											<h3>1997</h3>
+											<p>The Diving Bell and the Butterfly was published and became an international bestseller.</p>
+											<p>Jean-Dominique Bauby died two days after his book was published. He was 44.</p>
+										</div>
+										<div class="event">
+											<h3>2007</h3>
+											<p>The Diving Bell and the Butterfly was turned into a movie and was later nominated for several Academy Awards.</p>
+										</div>
+									</div>
+									<div class="content-image">
+                                    	<img src="assets/images/BaubyBefore.jpg" alt="Jean-Dominique Bauby">
+                                    	<p class="image-caption">Jean-Dominique Bauby with his children, before the stroke</p>
+                                	</div>
+								`;
+								break;
+							case 'locked':
+								content = `
+									<header>
+										<div class="title">
+											<h2>What is Locked In Syndrome?</h2>
+										</div>
+									</header>
+									<p>Locked-in syndrome is a neurological condition where the patient is still conscious and cognitive but is nearly paralyzed. Bauby described it as “a mind in a jar,” and he, like many others, could only communicate through blinking. Bauby created an alphabet based on how frequently letters were used in front, putting letters like E, S, and A at the beginning. There are three types of locked-in syndrome: classical LiS, incomplete LiS, and total immobility LiS. Classical is where the person is completely paralyzed, save their eye(s). Incomplete is where the person still has some form of voluntary movement, and total is when the person has no voluntary movement at all. 
+</p>
+									<p>LiS is extremely rare and even misdiagnosed oftentimes. People with LiS can’t chew, swallow, speak, make facial expressions, or move (except for their eyes). However, they are still conscious, can move their eyes vertically, have a sleep schedule, and think “regularly”. LiS occurs when there is severe damage to the brainstem (which controls motor functions) and is often caused by a stroke. An Ischemic stroke (blocked blood supply) or a hemorrhagic stroke (bleeding in the brain) often lead to LiS. It can also be caused by brain infections, tumors, demyelinating diseases, neurological conditions, trauma to the brainstem, and even medical overdose. LiS has been found hard to diagnose as it is often mistaken for a coma or vegetative state. 
+</p>
+									<p>As of now, there isn’t a cure for it, but there is therapy that can help. Respiratory aid, feeding tubes, and prevention of other health issues are all forms of therapy common to LiS patients. As well as forms of occupational therapy that work to prevent contractures and help maintain whatever movement possible. Bauby, like others, worked with a speech therapist to help create eye movement codes and other possible forms of communication. Despite this, once diagnosed with LiS, patients are only expected to live another 10-20 years. Someone would rarely regain any type of movement. Little technology has been developed for LiS, and patients have to rely on eye-based communication, nurses, and assistive devices. As more research is done and technology gets more advanced, LiS patients should start to be able to live better lives and regain more control.
+</p>
+									<p><i>“The happiest people don’t have the best of everything, they just make the best of everything they have.”<i><p>
+									<p><i>- Kate Allatt<i><p>
+									
+								`;
+								break;
+							case 'butterfly':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Why the Butterfly?</h2>
+											<p>The title The Diving Bell and the Butterfly is very symbolic in the sense that a diving bell is heavy and held underwater, and a butterfly is light and free. These two things are in stark contrast, like Bauby himself. The diving bell, a symbol of entrapment and isolation, is his body; the butterfly, his mind. Bauby is very conscious of his immobility and is often frustrated that he cannot interact with those around him, yet his mind is what allows him to be free. Through his novel, Bauby struggles with being trapped, the isolation, loneliness, and despair. He feels he has been reduced to a “total vegtable”, not matching his rich inner life. He describes fine dining, exploring the world, and spending time with family, all while locked inside his body. Despite not being physically free, he is mentally free. He teaches his audience that as long as you have your mind, you cannot be weighed down.<p>
+											<p>The butterfly in him represents freedom and beauty as well as freedom. He is “taking flight,” creating his own world where he, too, can participate in normal activities. The contrast between physical freedom and mental suffering is great, and Bauby struggles to narrow the gap. He chooses to focus on what he can do: tell his story. It is his communication to the world in an existence where communication is limited. The “butterfly” is a lifeline to humanity; it is the last of his fleeting memory, imagination, and love. 
+<p>
+											<p>Bauby’s only communication is so laborious, yet it is his only source of liberation. His metaphor of the butterfly represents how his words and ideas take him out of his reality. Yet his body, the diving bell, teathers him. This struggle of imprisonment but also rebirth of the mind is powerful and tells a fascinating story. It is rare and extremely hard to get the perspective of someone like Bauby. Being a writer, Bauby was able to deliver his narrative in a way where the reader, too, became a diving bell and butterfly. 
+<p>
+										</div>
+								`;
+								break;
+							case 'citations':
+								content = `
+									<header>
+										<div class="title">
+											<h2>Citations</h2>
+										</div>
+									</header>
+									<p>Bauby, Jean-Dominique. “The Diving Bell and the Butterfly Symbols, Allegory and Motifs.” GradeSaver, www.gradesaver.com/the-diving-bell-and-the-butterfly/study-guide/symbols-allegory-motifs. Accessed 11 Mar. 2025.</p>
+									<p>Crumley/Paris, Bruce. “Jean-Dominique Bauby: A Triumph of the Spirit.” Time, Time, 24 Mar. 1997, time.com/archive/6730546/jean-dominique-bauby-a-triumph-of-the-spirit/.</p>
+									<p>“Jean-Dominique Bauby.” Wikipedia, Wikimedia Foundation, 13 Oct. 2024, en.wikipedia.org/wiki/Jean-Dominique_Bauby.</p>
+									<p>“Locked-in Syndrome (LIS): What It Is, Causes & Symptoms.” Cleveland Clinic, 19 Dec. 2024, my.clevelandclinic.org/health/diseases/22462-locked-in-syndrome-lis.</p>
+									<p>“Locked-in Syndrome.” National Institute of Neurological Disorders and Stroke, U.S. Department of Health and Human Services, www.ninds.nih.gov/health-information/disorders/locked-syndrome. Accessed 11 Mar. 2025.</p>
+									<p>Mcoswalt. “The Diving Bell and the Butterfly.” Rehumanize, Rehumanize, 6 June 2023, www.rehumanizeintl.org/post/the-diving-bell-and-the-butterfly.</p>
+									<p>“The Story behind the Diving Bell and the Butterfly.” Aruma, 15 July 2019, www.aruma.com.au/about-us/blog/the-story-behind-the-diving-bell-and-the-butterfly/#:~:text=Jean%20turned%20a%20corner%20in,the%20letter%20to%20be%20noted.%E2%80%9D.</p>
+									<p>Via. “The Diving Bell and the Butterfly: Reflections & Notes.” Vialogue, 6 Sept. 2022, vialogue.wordpress.com/2022/09/06/the-diving-bell-and-the-butterfly-reflections-notes/#jp-carousel-29913.</p>
+								`;
+								break;
+							default:
+								content = `
+									<div class="content-wrapper">
+										<div class="content-text">
+											<header>
+												<div class="title">
+													<h2>To what extent do you feel hopeful about the future based on your book?</h2>
+												</div>
+											</header>
+											<p>Jean-Dominique Bauby’s memoir, The Diving Bell and the Butterfly, describes the unimaginable suffering he endured but also his resilience and freedom of mind. After having a stroke, Bauby was diagnosed with locked-in syndrome, paralyzing him everywhere except his left eye. Despite this, his speech therapist created a special alphabet, and he dictated the book, letter by letter. Through his hopeless and tragic circumstances, Bauby has an incredibly hopeful and joyful outlook on life. Through freedom of mind, the power of imagination, and human connection, Bauby shows that the “diving bell” can always be transcended by the “butterfly”. Bauby’s imagination and memory provide a lot of hope, his limited relationships and little joys keep him grounded in life, and even in his darkest hour, he still always found hope and will to live. His story inspires a lot of hope for life, showing that no matter the circumstances, you can always find joy.
+</p>
+							<p>Bauby’s imagination and memory allow him to escape his physical confinements and find hope in his eternal world. Throughout his novel, he describes his rich inner world freeing him from the confines of his body. By creating his own experiences and joy, he was able to somewhat enjoy life and find meaning. He writes, "I decided to stop pitying myself. Other than my eye, two things aren't paralyzed, my imagination and my memory" (Bauby, 20). His choice to focus on what he does have, his mind, shows that he is extremely resilient to all his pain and is full of hope. He truly believes that he can still live a life worth living and have meaningful experiences. Even when almost everything has been ripped from him, he still has hope and faith. Bauby was excellent at creating his own world, being the butterfly, and freeing his mind. His book reads, "My diving bell becomes less oppressive, and my mind takes flight like a butterfly" (Bauby, 5). The metaphor of the butterfly symbolizes Bauby’s freedom through his own thoughts and imagination. He proves to the reader that hope lies in the ability to “fly” despite whatever diving bells you may have. Your mind cannot be taken from you; as long as you retain freedom of mind, freedom and hope can be found. Bauby shows us that you, as well as any small pleasures, can always make life worth living.
+</p>
+							<p>Bauby finds hope in the connections that he maintains with others and in whatever small pleasures he finds, keeping him engaged with life. His letters from his friends, phone calls from family, nurses talking to him, and one-sided conversations all show him daily that he is not alone. The people that care about him, that he maintains whatever connection possible with, give him purpose. He says, "I hoard all these letters like a treasure. One day, I hope to fasten them end to end in a half-mile streamer, to float in the wind like a banner raised to the glory of friendship. It will keep the vultures at bay." The letters, to him, strengthen and prove that he still has a community and a bond with people. Being a writer, language is of the utmost importance and gives him meaning in an otherwise meaningless existence. They “keep the vultures at bay” by showing him that people still love, remember, and care for him. This makes him hopeful instead of depressed and isolated. Even being trapped in his body, Bauby finds joy in his memories of eating, his children, and his experiences with others. "For pleasure, I have to turn to the vivid memory of tastes and smells, an inexhaustible reservoir of sensations" (Bauby, 36). Despite his physical limitations, Bauby’s memories of simple joys, like food, scents, and sights, help him still experience joy. His “inexaustiable resilience” shows that he always has more sources of memories and will create new ones to stay hopeful. Even in isolation, his emotional connections create a reason to be alive and find new moments of beauty, joy, and love. 
+</p>
+							<p>Bauby undoubtedly had many moments of depression and despair, but it was his resolve to keep looking for meaning and connection that makes his story one of hope. Bauby, despite creating his own freedom, still questions if he will ever be free. Even in his condition, his refusal to give into depression proves he still has hope. The book reads, "Does the cosmos contain keys for opening my diving bell? A subway line with no terminus? A currency strong enough to buy my freedom back? We must keep looking" (Bauby, 131). He recognizes that there is no known way out of his diving bell; he is trapped. Logically, he knows that there is no cure, but his desire to look creates the hope and will he needs. Even in the desperation and uncertainty he lives with, he refuses to give up. Bauby’s need to feel emotions like love and admiration shows that he’s still deeply engaged with life and will not become numb and detached. He even says, "I need to feel strongly, to love and admire, just as desperately as I need to breathe" (Bauby, 55). He values emotional connection so much that without it, he wouldn’t want to live. Bauby doesn’t ignore despair; he acknowledges it, but his drive and unbroken spirit keep him going. He wants to live fully, not just exist. His perseverance in finding meaning despite his loss of body and suffering strengthens his immensely hopeful outlook on life. 
+</p>
+							<p>Jean-Dominique Bauby led a very hopeful life, and he showed that imagination, memory, and connection can offer freedom even in the most confined and devastating circumstances. Bauby’s imagination allowed him to move past his diving bell and be a butterfly, creating his own joy. His relationships and knowing that people still cared drove him. It was the smallest pleasures and experiences that provided great comfort and solace to him. Although he experienced loss and grief, he continued to search for meaning and connection, proving that hope can and will always survive hardship. The Diving Bell and the Butterfly reminds us that the human spirit can endure the greatest of challenges, if only the mind is free. Bauny’s life and messages teach that hope and beauty can always be found if you only have the will and desire. You can make any life worth living, and Bauby made every moment of his count. He created a more hopeful future that anyone is able to reflect back in their own life. 
+</p>
+										
+										</div>
+									</div>
+								`;
+						}
+						contentArea.innerHTML = content;
+					}
+
+
+					// Modify the event listener for nav links
+					navLinks.forEach(link => {
+						link.addEventListener('click', function(e) {
+							e.preventDefault();
+							const page = this.getAttribute('data-page');
+							loadContent(page);
+
+							if (page === 'discover') {
+								setTimeout(() => {
+									const submitButton = document.getElementById('submitQuiz');
+									if (submitButton) {
+										submitButton.addEventListener('click', () => {
+											const result = calculateQuizResults();
+											document.getElementById('quizResults').innerHTML = `<p>${result}</p>`;
+										});
+									}
+								}, 100);
+							}
+						});
+					});
+
+					// Load default content
+					loadContent('');
+				});
+			</script>
+
+	</body>
+</html>
